@@ -1,5 +1,4 @@
 package Reports;
-
 import CustomerInfo.City;
 import CustomerInfo.Customers;
 import Orders.Order_Includes;
@@ -8,7 +7,6 @@ import Products.Brand;
 import Products.Color;
 import Products.Shoe;
 import Products.Size;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.*;

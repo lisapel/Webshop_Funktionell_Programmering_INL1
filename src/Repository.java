@@ -34,17 +34,11 @@ public class Repository {
 
             while (resultSet.next()) {
                 Customers customer = new Customers();
-                int id = resultSet.getInt("customer.id");
-                customer.setId(id);
-                String name = resultSet.getString("customer.name");
-                customer.setName(name);
-                String address = resultSet.getString("customer.address");
-                customer.setAddress(address);
-                String password = resultSet.getString("customer.password");
-                customer.setPassword(password);
-
-                City city = new City(resultSet.getString("city.city"));
-                customer.setCity(city);
+                customer.setId(resultSet.getInt("customer.id"));
+                customer.setName(resultSet.getString("customer.name"));
+                customer.setAddress(resultSet.getString("customer.address"));
+                customer.setPassword(resultSet.getString("customer.password"));
+                customer.setCity(new City(resultSet.getString("city.city")));
                 customers.add(customer);
             }
             return customers;
@@ -69,18 +63,12 @@ public class Repository {
 
             while (resultSet.next()){
                 Shoe shoe = new Shoe();
-                int id = resultSet.getInt("shoe.id");
-                shoe.setId(id);
-                int quantity = resultSet.getInt("shoe.quantity");
-                shoe.setQuantity(quantity);
-                int price = resultSet.getInt("shoe.price");
-                shoe.setPrice(price);
-                Brand brand = new Brand(resultSet.getString("brand.brand"));
-                shoe.setBrand(brand);
-                Color color = new Color(resultSet.getString("color.color"));
-                Size size = new Size(resultSet.getInt("size.size"));
-                shoe.setColor(color);
-                shoe.setSize(size);
+                shoe.setId(resultSet.getInt("shoe.id"));
+                shoe.setQuantity(resultSet.getInt("shoe.quantity"));
+                shoe.setPrice(resultSet.getInt("shoe.price"));
+                shoe.setBrand(new Brand(resultSet.getString("brand.brand")));
+                shoe.setColor(new Color(resultSet.getString("color.color")));
+                shoe.setSize(new Size(resultSet.getInt("size.size")));
                 shoeList.add(shoe);
             }
         }return shoeList;
