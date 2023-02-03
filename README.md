@@ -1,7 +1,9 @@
 # Funktionell_Programmering_INL1
 
-WEBSHOP FÖR SKOR
+WEBSHOP FÖR SKOR 
+
 G:
+
 Ett gränssnitt via kommandoraden kan se ut enligt följande: användaren blir promptad att
 skriva sitt användarnamn och lösenord (så att vi vet vilken användare som beställer).
 
@@ -25,6 +27,7 @@ användaren ska välja mellan ska ”svart” skrivas ut, inte ”32”.
 Använd dig av lambdas på minst 5 ställen (helst mer) i din Java-kod.
 
 VG:
+
 För att få VG måste G-uppgiften vara klar och uppfylla alla krav ovan. Du ska dessutom utveckla en
 enkel säljstöds-console-applikation (det är tillåtet att bygga grafiska gränssnitt om man vill, men det
 är inget krav) som visar följande rapporter:
