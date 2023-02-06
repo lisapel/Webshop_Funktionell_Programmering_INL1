@@ -19,13 +19,14 @@ public class Reports {
     Reports() throws IOException, SQLException {
         while (true) {
             System.out.println("\nMENU");
-            System.out.println("---------------------------" +
-                    "\n(1) ORDERS BY SHOE SIZE/BRAND/COLOR " +
-                    "\n(2) NUMBER OF ORDERS PER CUSTOMER " +
-                    "\n(3) TOTAL ORDER AMOUNT PER CUSTOMER" +
-                    "\n(4) TOTAL ORDER AMOUNT PER CITY" +
-                    "\n(5) MOST POPULAR PRODUCTS" +
-                    "\n(6) QUIT"
+            System.out.println("""
+                    ---------------------------
+                    (1) ORDERS BY SHOE SIZE/BRAND/COLOR\s
+                    (2) NUMBER OF ORDERS PER CUSTOMER\s
+                    (3) TOTAL ORDER AMOUNT PER CUSTOMER
+                    (4) TOTAL ORDER AMOUNT PER CITY
+                    (5) MOST POPULAR PRODUCTS
+                    (6) QUIT"""
             );
             System.out.println("Select number: 1-5");
             menu();
